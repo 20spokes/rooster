@@ -1,0 +1,29 @@
+= form_for [:admin, @post] do |f|
+  .input-group 
+    = f.text_field :title, placeholder: "Enter title here", class: "title"
+
+  .input-group 
+    = f.label :slug
+    = f.text_field :slug
+
+  .input-group
+    = f.label :published_at
+    = f.date_field :published_at
+
+  = f.fields_for :blocks do |block|
+    .input-group
+      = block.text_area :content
+
+  .actions
+    %button Save
+
+:javascript
+  tinymce.init({
+    selector: "textarea",
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste"
+    ],
+    toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+  });

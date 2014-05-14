@@ -1,0 +1,8 @@
+%h1 Create Posts
+
+= link_to "New Post", new_admin_post_path
+
+%table
+  - @posts.each do |post|
+    %tr
+      %td= link_to post.title, edit_admin_post_path(post)

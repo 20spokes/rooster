@@ -2,6 +2,8 @@ module Rooster
   class Engine < ::Rails::Engine
     isolate_namespace Rooster
 
+    config.asset_path = "/rooster_assets%s"
+
     config.generators do |generate|
       generate.helper false
       generate.assets false

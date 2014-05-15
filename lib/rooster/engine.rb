@@ -2,7 +2,10 @@ module Rooster
   class Engine < ::Rails::Engine
     isolate_namespace Rooster
 
-    config.asset_path = "/rooster_assets%s"
+    initializer :assets do |config|
+      Rails.application.config.assets.precompile += %w( rooster/application.js rooster/application.css )
+    end
+
 
     config.generators do |generate|
       generate.helper false

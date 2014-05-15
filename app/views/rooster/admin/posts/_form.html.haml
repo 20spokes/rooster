@@ -10,6 +10,10 @@
     = f.label :published_at
     = f.date_field :published_at
 
+  .input-group
+    = f.label :excerpt
+    = f.text_area :excerpt
+
   = f.fields_for :blocks do |block|
     .input-group
       = block.text_area :content

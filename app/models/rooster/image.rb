@@ -1,2 +1,2 @@
-class Roster::Image < ActiveRecord::Base
+class Rooster::Image < ActiveRecord::Base
 end

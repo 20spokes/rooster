@@ -1,0 +1,12 @@
+.input-group {
+  label {
+  }
+
+  input{
+    border: 1px solid #d3d3d3;
+    padding: 7px;
+    &.title {
+      width: 100%;
+    }
+  }
+}

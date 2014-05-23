@@ -1,0 +1,17 @@
+.sidebar {
+  width: 160px;
+  float: left;
+  position: relative;
+}
+
+.main{
+  margin: 0 0 0 161px;
+  position: relative;
+}
+
+.main-wrapper {
+  @include clearfix;
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+}

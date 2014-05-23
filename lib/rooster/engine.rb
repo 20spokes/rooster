@@ -25,8 +25,8 @@ module Rooster
 #    initializer :assets do |config|
 #      Rails.application.assets.paths << root.join("vendor")
 #    end
-     initializer :append_dependent_assets_path, :group => :all do |app|
-       app.config.assets.paths.push(root.join("vendor"))
-     end
+#     initializer :append_dependent_assets_path, :group => :all do |app|
+#       app.config.assets.paths.push(root.join("vendor"))
+#     end
   end
 end

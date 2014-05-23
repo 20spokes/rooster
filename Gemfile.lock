@@ -1,9 +1,10 @@
 PATH
   remote: .
   specs:
-    rooster (0.0.4.9)
+    rooster (0.0.6.1)
       devise (~> 3.2)
       haml (~> 4.0)
+      non-stupid-digest-assets
       rails (~> 4.1.1)
 
 GEM
@@ -56,6 +57,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.4)
     multi_json (1.10.1)
+    non-stupid-digest-assets (1.0.4)
     orm_adapter (0.5.0)
     polyglot (0.3.4)
     rack (1.5.2)

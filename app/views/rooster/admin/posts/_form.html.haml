@@ -1,3 +1,4 @@
+= tinymce_assets
 = form_for [:admin, @post] do |f|
   .input-group 
     = f.text_field :title, placeholder: "Enter title here", class: "title"
@@ -12,11 +13,13 @@
 
   .input-group
     = f.label :excerpt
-    = f.text_area :excerpt
+    = f.text_area :excerpt, class: "tinymce"
 
   = f.fields_for :blocks do |block|
     .input-group
-      = block.text_area :content
+      = block.text_area :content, class: "tinymce"
+
+  = tinymce
 
   .actions
     %button Save

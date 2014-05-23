@@ -34,5 +34,5 @@ module Rooster
 #      #app.middleware.insert_before(::Rack::Lock, ::ActionDispatch::Static, "#{root}/public")
 #      app.middleware.use ::ActionDispatch::Static, "#{root}/public"
 #    end
-#  end
+  end
 end

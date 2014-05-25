@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rooster (0.0.6.1)
+    rooster (0.0.6.7)
       devise (~> 3.2)
       haml (~> 4.0)
       non-stupid-digest-assets

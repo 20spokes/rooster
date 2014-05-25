@@ -1,6 +1,8 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+@import 'fontawesome/font-awesome';
+
 @import "base/variables";
 
 @import "base/normalize";
@@ -9,3 +11,5 @@
 @import "base/typography";
 @import "base/form";
 
+@import "module/header";
+@import "module/menu";

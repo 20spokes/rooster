@@ -1,17 +1,37 @@
-.sidebar {
-  width: 160px;
-  float: left;
+$sidebar-bgcolor: #fff;
+.container{
+  min-height: 100%;
+}
+.main-wrapper{
+  height: 100%;
+  display: table;
   position: relative;
+  width: 100%;
+}
+
+.header-padding {
+  display: table-row;
+  height: 56px;
+}
+
+.sidebar {
+  width: 225px;
+  position: fixed;
+  background-color: $sidebar-bgcolor;
+  border-right: 1px solid #d3d3d3;
+  top: 56px;
+  bottom: 0;
+  z-index: 1;
 }
 
 .main{
-  margin: 0 0 0 161px;
+  margin: 0 0 0 225px;
   position: relative;
+  padding: 20px;
 }
 
 .main-wrapper {
   @include clearfix;
   width: 100%;
   overflow: auto;
-  padding: 20px;
 }

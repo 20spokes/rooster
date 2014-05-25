@@ -1,0 +1,16 @@
+.header {
+  background: $primary-color;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 600px;
+  width: 100%;
+  z-index: 200;
+  a {
+    color: #fff;
+    padding: 7px 8px 7px 7px;
+    text-decoration: none;
+    display: inline-block;
+  }
+}

@@ -27,13 +27,13 @@ module Rooster
       generate.assets false
       generate.template_engine :haml
     end
+    initializer :append_dependent_assets_path, :group => :all do |app|
+      app.config.assets.paths.push(root.join("app", "assets", "fonts"))
+    end
 
 #    initializer :assets do |config|
 #      Rails.application.assets.paths << root.join("vendor")
 #    end
-#     initializer :append_dependent_assets_path, :group => :all do |app|
-#       app.config.assets.paths.push(root.join("vendor"))
-#     end
 #    initializer "static assets" do |app|
 #      #app.middleware.insert_before(::ActionDispatch::Static, ::ActionDispatch::Static, "#{root}/public")
 ##      app.middleware.use ::ActionDispatch::Static, "#{root}/public"

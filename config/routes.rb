@@ -3,7 +3,7 @@ Rooster::Engine.routes.draw do
   end
 
   namespace :admin do
-    resources :pages, :posts
+    resources :pages, :posts, :filemanager
     get 'dashboard' => "dashboard#index", as: 'dashboard_index'
   end
 end

@@ -10,11 +10,4 @@
     = csrf_meta_tags
 
   %body{ class: "#{controller.controller_name} #{controller.action_name}" }
-    .container
-      .header
-        = render 'rooster/shared/header'
-      .main-wrapper
-        .header-padding;
-        .sidebar
-          = render 'rooster/shared/side_menu'
-        = yield
+    = yield

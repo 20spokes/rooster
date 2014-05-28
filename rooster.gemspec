@@ -21,6 +21,10 @@ Gem::Specification.new do |s|
   s.add_dependency "devise", "~> 3.2"
 
   s.add_dependency "haml", "~> 4.0"
+  s.add_dependency "haml_coffee_assets"
+  s.add_dependency "carrierwave"
+  s.add_dependency "carrierwave-processing"
+  s.add_dependency "mini_magick"
   s.add_dependency "non-stupid-digest-assets"
 
 #  s.add_dependency "bourbon", "~> 3.2"

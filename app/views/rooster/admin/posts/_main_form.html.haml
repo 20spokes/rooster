@@ -1,0 +1,33 @@
+.input-group 
+  = f.text_field :title, placeholder: "Enter title here", class: "title large"
+
+.input-group 
+  = f.label :slug do
+    Slug
+    %span.slug-text http://www.example.com/slug-example
+  = f.text_field :slug
+
+= f.fields_for :blocks do |block|
+  .input-group
+    = block.text_area :content, rows: "15", class: 'tinymce'
+
+.input-group
+  = f.label :excerpt
+  = f.text_area :excerpt
+
+:javascript
+  tinymce.baseURL = "/assets/rooster/tinymce";
+  tinymce.init({
+    selector: ".tinymce",
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste -filemanager"
+    ],
+    file_browser_callback: function(field_name, url, type, win) {
+      if(type =='image'){
+      }
+    },
+    image_advtab: true,
+    toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image filemanager"
+  });

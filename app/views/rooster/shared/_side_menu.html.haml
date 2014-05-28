@@ -1,7 +1,9 @@
 %ul.side-menu
   %li 
     = link_to admin_dashboard_index_path do
-      Dashboard
       %i.fa.fa-inbox
+      Dashboard
   %li
-    = link_to "Posts", admin_posts_path
+    = link_to admin_posts_path do
+      %i.fa.fa-folder-open-o
+      Posts

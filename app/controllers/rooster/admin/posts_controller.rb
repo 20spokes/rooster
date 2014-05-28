@@ -42,6 +42,6 @@ class Rooster::Admin::PostsController < Rooster::ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:published_at, :excerpt, :title, :slug, blocks_attributes: [:content, :id, :slug, :position])
+    params.require(:post).permit(:published_at, :excerpt, :title, :slug, :state, blocks_attributes: [:content, :id, :slug, :position])
   end
 end

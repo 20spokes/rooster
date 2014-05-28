@@ -1,3 +1,22 @@
-%h1 New Post
+.main
+  .post-body
+    = form_for [:admin, @post] do |f|
+      .post-content
+        .breadcrumb
+          = link_to admin_posts_path do
+            %i.fa.fa-folder-open-o
+            Posts
+          = link_to "New Post", new_admin_post_path
 
-= render 'form'
+        = render 'main_form', {f: f}
+      .post-sidebar
+        %fieldset
+          = f.submit "Save", class: "button"
+
+          .input-group
+            = f.label :state
+            = f.select :state, Rooster::Post.states
+
+          .input-group
+            = f.label :published_at
+            = f.date_field :published_at

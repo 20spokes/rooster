@@ -1,11 +1,23 @@
+$side-menu-font-size: 14px;
+$side-menu-font-color: #5e5e5e;
+
 .side-menu {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 10px 15px;
   li {
+    font-size: $side-menu-font-size;
     a {
-      padding: 10px 0;
+      color: $side-menu-font-color;
+      padding: 7px 0;
       display: block;
+      &:hover{
+        color: $primary-color;
+        @include transition (all 0.2s ease-in-out);
+      }
+      i{
+        margin-right: 5px;
+      }
     }
   }
 }

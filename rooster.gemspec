@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "haml", "~> 4.0"
   s.add_dependency "haml_coffee_assets"
+  s.add_dependency "sass-rails", '~> 4.0.1'
   s.add_dependency "carrierwave"
   s.add_dependency "carrierwave-processing"
   s.add_dependency "mini_magick"

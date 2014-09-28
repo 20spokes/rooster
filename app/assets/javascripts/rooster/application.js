@@ -1,13 +1,3 @@
-//= require jquery
-//= require jquery_ujs
-//= require ./backbone/underscore-min.js
-//= require ./backbone/backbone-min.js
-//= require ./backbone/backbone.marionette.min.js
-//= require ./backbone/rooster_app
-//= require_tree ./backbone/models
-//= require_tree ./backbone/collections
-//= require_tree ./backbone/
-//= require ./tinymce/tinymce.min.js
-//= require ./tinymce/jquery.tinymce.min.js
-//= require ./plugins/filemanager/filemanager
-//= require_tree ./tinymce/
+//= require ./vendor/jquery-1.10.2
+//= require ./vendor/ember-1.7.0
+//= require ./vendor/handlebars-1.1.2
